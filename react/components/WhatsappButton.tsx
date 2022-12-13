@@ -13,7 +13,7 @@ const WhatappButton = ({ logo, phone, message, whidth }: Props) => {
     const formatedMessage = message.replace(/ /g, "%20")
     return (
         <>
-            <div className='fixed bottom-2 right-2 flex flexColumn'>
+            <div className='fixed bottom-2 right-2 flex flexColumn z-999'>
                 <a href={`https://wa.me/${phone}?text=${formatedMessage}`}>
                     <img width={whidth} src={logo} alt="soy el logo de whatsapp" />
                 </a>
